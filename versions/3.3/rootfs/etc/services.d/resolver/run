@@ -9,4 +9,4 @@ ifelse { s6-test -n ${ALPINE_NO_RESOLVER} }
 	/sbin/kubernetes_multi_pod.sh
 }
 fdmove -c 2 1
-go-dnsmasq --default-resolver --append-search-domains --hostsfile=/etc/hosts
+go-dnsmasq --default-resolver --append-search-domains --hostsfile=/etc-extra/hosts
